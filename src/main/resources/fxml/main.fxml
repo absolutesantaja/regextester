@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+      prefWidth="800.0" spacing="5.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="us.weeksconsulting.regextester.Main">
+    <children>
+        <Label text="Regular Expression">
+            <font>
+                <Font size="14.0"/>
+            </font>
+            <padding>
+                <Insets left="5.0"/>
+            </padding>
+        </Label>
+        <TextField fx:id="regexTextField" onKeyReleased="#handleKeyReleased">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <Label text="Input Text">
+            <font>
+                <Font size="14.0"/>
+            </font>
+            <padding>
+                <Insets left="5.0"/>
+            </padding>
+        </Label>
+        <TextField fx:id="inputTextField" onKeyReleased="#handleKeyReleased">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <Label text="Replacement Text">
+            <font>
+                <Font size="14.0"/>
+            </font>
+            <padding>
+                <Insets left="5.0"/>
+            </padding>
+        </Label>
+        <TextField fx:id="replaceTextField" onKeyReleased="#handleKeyReleased">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <TextArea fx:id="outputTextArea" editable="false" VBox.vgrow="ALWAYS">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextArea>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+</VBox>
